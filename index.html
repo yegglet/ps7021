@@ -52,6 +52,28 @@
 			"LED_STATUS": "OFF"
 		});
 	}	
+        
+    	function low(){
+		console.log("low mode");
+		ref.update({
+			"SERVO_STATUS": "LOW"
+		});
+	}        
+        
+	function med(){
+		console.log("med mode");
+		ref.update({
+			"SERVO_STATUS": "MED"
+		});
+	}  
+
+	function high(){
+		console.log("high mode");
+		ref.update({
+			"SERVO_STATUS": "HIGH"
+		});
+	}          
+            
     </script>
 
 </body>

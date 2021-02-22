@@ -52,11 +52,11 @@ $(function(){
 </div >
 <div class="row">    
 <h3>Three.js </h3><br>
-<script>
+
 <script src="three.min.js"></script>
 <script src="STLLoader.js"></script>
 <script src="OrbitControls.js"></script>
-    
+<script>    
     <div id="model" style="width: 500px; height: 500px"> </div>
  
     function STLViewer(model, elementID) {
@@ -115,13 +115,13 @@ $(function(){
         animate();
     });
 }  
-
+</script>
 
 <script type="text/javascript">
 window.onload = function() {
     STLViewer("Octocat-v1.stl", "model")
 }
-</script>    </script>    
+</script>      
     
 </div >
 <div class="row">

@@ -84,11 +84,9 @@ $(function(){
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2;
     
-        
     var scene = new THREE.Scene();
     scene.add(new THREE.HemisphereLight(0xffffff, 1.5));
-//    scene.background(new THREE.Color( 0x72645b ));
-        
+    
     (new THREE.STLLoader()).load(model, function (geometry) {
     var material = new THREE.MeshPhongMaterial({ 
         color: 0xff5533, 
@@ -97,7 +95,7 @@ $(function(){
     var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
   					const material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
-					const mesh = new THREE.Mesh( geometry, material ); }     
+					const mesh = new THREE.Mesh( geometry, material );      
         
     var middle = new THREE.Vector3();
     geometry.computeBoundingBox();
